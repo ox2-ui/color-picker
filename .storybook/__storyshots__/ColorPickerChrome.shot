@@ -1,0 +1,55 @@
+exports[`coral`] = `
+<div>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff",
+        "borderRadius": "1px",
+        "boxShadow": "0 0 0 1px rgba(0,0,0,.1)",
+        "cursor": "pointer",
+        "display": "inline-block",
+        "height": "20px",
+        "padding": "5px",
+        "width": "20px",
+      }
+    }>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FE8057",
+          "height": "100%",
+          "width": "100%",
+        }
+      } />
+  </div>
+</div>
+`;
+
+exports[`default`] = `
+<div>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff",
+        "borderRadius": "1px",
+        "boxShadow": "0 0 0 1px rgba(0,0,0,.1)",
+        "cursor": "pointer",
+        "display": "inline-block",
+        "height": "20px",
+        "padding": "5px",
+        "width": "20px",
+      }
+    }>
+    <div
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "height": "100%",
+          "width": "100%",
+        }
+      } />
+  </div>
+</div>
+`;
