@@ -1,7 +1,8 @@
 import { configure } from '@kadira/storybook';
-import { setOptions } from '@kadira/storybook-addon-options';
-import ThemeLoader
-  from '@ox2/theming/ThemeLoader';
+import {
+  setOptions,
+} from '@kadira/storybook-addon-options';
+import ThemeLoader from '@ox2/theming/ThemeLoader';
 import { default as theme } from '@tapfuse/theme-spark';
 import '@ox2/css-font-roboto-condensed';
 import '@ox2/css-font-roboto';

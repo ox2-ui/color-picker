@@ -17,7 +17,6 @@ const styles = {
   },
 };
 
-
 class ColorPickerChrome extends React.Component {
   static propTypes = {
     /**
@@ -39,22 +38,24 @@ class ColorPickerChrome extends React.Component {
     value: this.props.value || '',
   };
 
-  componentWillReceiveProps= (nextProps) => {
+  componentWillReceiveProps = nextProps => {
     if (nextProps.value !== this.state.value) {
       this.setState({ value: nextProps.value });
     }
-  }
+  };
 
   handleClick = () => {
-    this.setState({ displayColorPicker: !this.state.displayColorPicker });
+    this.setState({
+      displayColorPicker: !this.state.displayColorPicker,
+    });
   };
 
   handleClose = () => {
     this.setState({ displayColorPicker: false });
   };
 
-  handleChange = (value) => {
-      // this.setState({ color: color.rgb })
+  handleChange = value => {
+    // this.setState({ color: color.rgb })
     if (this.props.onChange) {
       this.props.onChange(value);
     }
@@ -67,11 +68,23 @@ class ColorPickerChrome extends React.Component {
 
     return (
       <div>
-        <Swatch color={this.state.value.hex} onClick={ this.handleClick } />
-        { displayColorPicker ? <div style={ styles.popover }>
-          <div style={ styles.cover } onClick={ this.handleClose } />
-          <ChromePicker disableAlpha={disableAlpha} color={ value } onChange={ this.handleChange } />
-        </div> : null }
+        <Swatch
+          color={this.state.value.hex}
+          onClick={this.handleClick}
+        />
+        {displayColorPicker
+          ? <div style={styles.popover}>
+              <div
+                style={styles.cover}
+                onClick={this.handleClose}
+              />
+              <ChromePicker
+                disableAlpha={disableAlpha}
+                color={value}
+                onChange={this.handleChange}
+              />
+            </div>
+          : null}
       </div>
     );
   }

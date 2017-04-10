@@ -7,9 +7,11 @@ import { assert } from 'chai';
 
 describe('Swatch', () => {
   it('should render a <Swatch> element', () => {
-    const wrapper = shallow(
-      <Swatch />
+    const wrapper = shallow(<Swatch />);
+    assert.strictEqual(
+      wrapper.type(),
+      'div',
+      'should be a <div>',
     );
-    assert.strictEqual(wrapper.type(), 'div', 'should be a <div>');
   });
 });

@@ -21,21 +21,21 @@ const styles = {
 /**
  * Swatch Component
  */
-const Swatch = (props) => {
+const Swatch = props => {
   const { color, size, onClick } = props;
 
   return (
     <div
       style={{
         ...styles.wrapper,
-        ...{width: `${size || 20}px`},
-        ...{height: `${size || 20}px`},
+        ...{ width: `${size || 20}px` },
+        ...{ height: `${size || 20}px` },
       }}
       onClick={onClick}
     >
       <div
         style={{
-          ...{backgroundColor: color},
+          ...{ backgroundColor: color },
           ...styles.swatch,
         }}
       />
