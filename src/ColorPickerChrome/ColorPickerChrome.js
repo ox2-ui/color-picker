@@ -22,15 +22,15 @@ class ColorPickerChrome extends React.Component {
     /**
      *  Disbale alpha channel (opacity)
      */
-    disableAlpha: PropTypes.any,
+    disableAlpha: PropTypes.bool,
     /**
      * Callback function that is fired when the filter dialog is dismissed.
      */
-    onChange: PropTypes.func,
+    onChange: PropTypes.func.isRequired,
     /**
      * Set color value
      */
-    value: PropTypes.any,
+    value: PropTypes.any.isRequired,
   };
 
   state = {
@@ -81,7 +81,7 @@ class ColorPickerChrome extends React.Component {
               <ChromePicker
                 color={value}
                 disableAlpha={disableAlpha}
-                onChange={this.handleChange}
+                onChangeComplete={this.handleChange}
               />
             </div>
           : null}

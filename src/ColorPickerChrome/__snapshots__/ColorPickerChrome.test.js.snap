@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ColorPickerChrome
+  disableAlpha={true}
+  onChange={[Function]}
+  value={
+    Object {
+      "hex": "#FE8057",
+    }
+  }
+>
+  <div>
+    <Swatch
+      color="#FE8057"
+      onClick={[Function]}
+    >
+      <div
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#fff",
+            "borderRadius": "1px",
+            "boxShadow": "0 0 0 1px rgba(0,0,0,.1)",
+            "cursor": "pointer",
+            "display": "inline-block",
+            "height": "20px",
+            "padding": "5px",
+            "width": "20px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#FE8057",
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+    </Swatch>
+  </div>
+</ColorPickerChrome>
+`;

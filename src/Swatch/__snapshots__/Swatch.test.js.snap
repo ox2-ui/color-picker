@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Swatch
+  color="mediumvioletred"
+  onClick={[Function]}
+  size={50}
+>
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff",
+        "borderRadius": "1px",
+        "boxShadow": "0 0 0 1px rgba(0,0,0,.1)",
+        "cursor": "pointer",
+        "display": "inline-block",
+        "height": "50px",
+        "padding": "5px",
+        "width": "50px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "mediumvioletred",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</Swatch>
+`;
