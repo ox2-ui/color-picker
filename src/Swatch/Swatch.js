@@ -26,12 +26,12 @@ const Swatch = props => {
 
   return (
     <div
+      onClick={onClick}
       style={{
         ...styles.wrapper,
         ...{ width: `${size || 20}px` },
         ...{ height: `${size || 20}px` },
       }}
-      onClick={onClick}
     >
       <div
         style={{

@@ -75,12 +75,12 @@ class ColorPickerChrome extends React.Component {
         {displayColorPicker
           ? <div style={styles.popover}>
               <div
-                style={styles.cover}
                 onClick={this.handleClose}
+                style={styles.cover}
               />
               <ChromePicker
-                disableAlpha={disableAlpha}
                 color={value}
+                disableAlpha={disableAlpha}
                 onChange={this.handleChange}
               />
             </div>
