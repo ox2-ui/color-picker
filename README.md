@@ -1,3 +1,5 @@
+### Package is no longer maintaned.
+
 # color-picker
 ![NPM version](https://img.shields.io/npm/v/@ox2/color-picker.svg?style=flat)
 
